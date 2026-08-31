@@ -1,0 +1,11 @@
+{
+  "name": "split-page-math",
+  "private": true,
+  "description": "Build-time LaTeX pre-rendering for the SPLIT project page.",
+  "scripts": {
+    "math": "node render-math.js ../index.html"
+  },
+  "dependencies": {
+    "katex": "0.16.22"
+  }
+}

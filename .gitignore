@@ -1,0 +1,5 @@
+node_modules/
+.DS_Store
+
+# Paper LaTeX source — kept locally, not published with the site
+paper/

@@ -3,236 +3,133 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  
+
   <!-- Primary Meta Tags -->
-  <!-- TODO: Replace with your paper title and author names -->
-  <meta name="title" content="PAPER_TITLE - AUTHOR_NAMES">
-  <!-- TODO: Write a compelling 150-160 character description of your research -->
-  <meta name="description" content="BRIEF_DESCRIPTION_OF_YOUR_RESEARCH_CONTRIBUTION_AND_FINDINGS">
-  <!-- TODO: Add 5-10 relevant keywords for your research area -->
-  <meta name="keywords" content="KEYWORD1, KEYWORD2, KEYWORD3, machine learning, computer vision, AI">
-  <!-- TODO: List all authors -->
-  <meta name="author" content="FIRST_AUTHOR_NAME, SECOND_AUTHOR_NAME">
+  <meta name="title" content="SPLIT: Training-Free AI-Generated and Partially Edited Video Detection - Jongyeop Hyun, Hyounghun Kim">
+  <meta name="description" content="SPLIT is a training-free detector for AI-generated and partially edited video. Patch-level temporal roughness and spatial motion incoherence deliver the highest Fake Recall at FPR = 0.1% on FakeParts, GenVideo, and ViF-Bench.">
+  <meta name="keywords" content="AI-generated video detection, training-free detection, partial video manipulation, deepfake detection, video forensics, patch tokens, ECCV 2026, computer vision, machine learning">
+  <meta name="author" content="Jongyeop Hyun, Hyounghun Kim">
   <meta name="robots" content="index, follow">
   <meta name="language" content="English">
-  
+
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="article">
-  <!-- TODO: Replace with your institution or lab name -->
-  <meta property="og:site_name" content="INSTITUTION_OR_LAB_NAME">
-  <!-- TODO: Same as paper title above -->
-  <meta property="og:title" content="PAPER_TITLE">
-  <!-- TODO: Same as description above -->
-  <meta property="og:description" content="BRIEF_DESCRIPTION_OF_YOUR_RESEARCH_CONTRIBUTION_AND_FINDINGS">
-  <!-- TODO: Replace with your actual website URL -->
-  <meta property="og:url" content="https://YOUR_DOMAIN.com/YOUR_PROJECT_PAGE">
-  <!-- TODO: Create a 1200x630px preview image and update path -->
-  <meta property="og:image" content="https://YOUR_DOMAIN.com/static/images/social_preview.png">
+  <meta property="og:site_name" content="POSTECH">
+  <meta property="og:title" content="SPLIT: Training-Free AI-Generated and Partially Edited Video Detection">
+  <meta property="og:description" content="A training-free detector that reads patch tokens from a frozen vision encoder to catch fully generated and partially edited video at ultra-low false positive rates. ECCV 2026.">
+  <meta property="og:url" content="https://split-eccv2026.github.io/">
+  <meta property="og:image" content="https://split-eccv2026.github.io/static/images/social_preview.png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
-  <meta property="og:image:alt" content="PAPER_TITLE - Research Preview">
-  <meta property="article:published_time" content="2024-01-01T00:00:00.000Z">
-  <meta property="article:author" content="FIRST_AUTHOR_NAME">
+  <meta property="og:image:alt" content="SPLIT achieves the highest Fake Recall at FPR = 0.1% across FakeParts, GenVideo, and ViF-Bench">
+  <meta property="article:author" content="Jongyeop Hyun">
   <meta property="article:section" content="Research">
-  <meta property="article:tag" content="KEYWORD1">
-  <meta property="article:tag" content="KEYWORD2">
+  <meta property="article:tag" content="AI-generated video detection">
+  <meta property="article:tag" content="Training-free detection">
 
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image">
-  <!-- TODO: Replace with your lab/institution Twitter handle -->
-  <meta name="twitter:site" content="@YOUR_TWITTER_HANDLE">
-  <!-- TODO: Replace with first author's Twitter handle -->
-  <meta name="twitter:creator" content="@AUTHOR_TWITTER_HANDLE">
-  <!-- TODO: Same as paper title above -->
-  <meta name="twitter:title" content="PAPER_TITLE">
-  <!-- TODO: Same as description above -->
-  <meta name="twitter:description" content="BRIEF_DESCRIPTION_OF_YOUR_RESEARCH_CONTRIBUTION_AND_FINDINGS">
-  <!-- TODO: Same as social preview image above -->
-  <meta name="twitter:image" content="https://YOUR_DOMAIN.com/static/images/social_preview.png">
-  <meta name="twitter:image:alt" content="PAPER_TITLE - Research Preview">
+  <meta name="twitter:title" content="SPLIT: Training-Free AI-Generated and Partially Edited Video Detection">
+  <meta name="twitter:description" content="A training-free detector that reads patch tokens from a frozen vision encoder to catch fully generated and partially edited video at ultra-low false positive rates. ECCV 2026.">
+  <meta name="twitter:image" content="https://split-eccv2026.github.io/static/images/social_preview.png">
+  <meta name="twitter:image:alt" content="SPLIT achieves the highest Fake Recall at FPR = 0.1% across three benchmarks">
 
   <!-- Academic/Research Specific -->
-  <meta name="citation_title" content="PAPER_TITLE">
-  <meta name="citation_author" content="FIRST_AUTHOR_LAST, FIRST_AUTHOR_FIRST">
-  <meta name="citation_author" content="SECOND_AUTHOR_LAST, SECOND_AUTHOR_FIRST">
-  <meta name="citation_publication_date" content="2024">
-  <meta name="citation_conference_title" content="CONFERENCE_NAME">
-  <meta name="citation_pdf_url" content="https://YOUR_DOMAIN.com/static/pdfs/paper.pdf">
-  
+  <meta name="citation_title" content="SPLIT: Training-Free AI-Generated and Partially Edited Video Detection via Spatial Patch-Level Incoherence and Temporal Roughness">
+  <meta name="citation_author" content="Hyun, Jongyeop">
+  <meta name="citation_author" content="Kim, Hyounghun">
+  <meta name="citation_publication_date" content="2026">
+  <meta name="citation_conference_title" content="European Conference on Computer Vision (ECCV)">
+  <meta name="citation_arxiv_id" content="2607.02886">
+  <meta name="citation_pdf_url" content="https://arxiv.org/pdf/2607.02886">
+
   <!-- Additional SEO -->
   <meta name="theme-color" content="#2563eb">
   <meta name="msapplication-TileColor" content="#2563eb">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="default">
-  
+
   <!-- Preconnect for performance -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="preconnect" href="https://ajax.googleapis.com">
-  <link rel="preconnect" href="https://documentcloud.adobe.com">
   <link rel="preconnect" href="https://cdn.jsdelivr.net">
 
+  <title>SPLIT: Training-Free AI-Generated and Partially Edited Video Detection | ECCV 2026</title>
 
-  <!-- TODO: Replace with your paper title and authors -->
-  <title>PAPER_TITLE - AUTHOR_NAMES | Academic Research</title>
-  
   <!-- Favicon and App Icons -->
   <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
   <link rel="apple-touch-icon" href="static/images/favicon.ico">
-  
+
   <!-- Critical CSS - Load synchronously -->
   <link rel="stylesheet" href="static/css/bulma.min.css">
   <link rel="stylesheet" href="static/css/index.css">
-  
+  <link rel="stylesheet" href="static/katex/katex.min.css">
+  <link rel="stylesheet" href="static/css/split.css">
+
   <!-- Non-critical CSS - Load asynchronously -->
-  <link rel="preload" href="static/css/bulma-carousel.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-  <link rel="preload" href="static/css/bulma-slider.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
   <link rel="preload" href="static/css/fontawesome.all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
   <link rel="preload" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-  
-  <!-- Fallback for browsers that don't support preload -->
+
   <noscript>
-    <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
-    <link rel="stylesheet" href="static/css/bulma-slider.min.css">
     <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
   </noscript>
-  
-  <!-- Fonts - Optimized loading -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
+
   <!-- Defer non-critical JavaScript -->
-  <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script defer src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
   <script defer src="static/js/fontawesome.all.min.js"></script>
-  <script defer src="static/js/bulma-carousel.min.js"></script>
-  <script defer src="static/js/bulma-slider.min.js"></script>
   <script defer src="static/js/index.js"></script>
-  
+
   <!-- Structured Data for Academic Papers -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "ScholarlyArticle",
-    "headline": "PAPER_TITLE",
-    "description": "BRIEF_DESCRIPTION_OF_YOUR_RESEARCH_CONTRIBUTION_AND_FINDINGS",
+    "headline": "SPLIT: Training-Free AI-Generated and Partially Edited Video Detection via Spatial Patch-Level Incoherence and Temporal Roughness",
+    "description": "A training-free detector that computes patch-level Two-step Temporal Roughness and Local Spatial Motion Incoherence on frozen vision encoder tokens, achieving the highest Fake Recall at FPR = 0.1% on FakeParts, GenVideo, and ViF-Bench.",
     "author": [
       {
         "@type": "Person",
-        "name": "FIRST_AUTHOR_NAME",
+        "name": "Jongyeop Hyun",
+        "url": "https://mldljyh.github.io/",
         "affiliation": {
           "@type": "Organization",
-          "name": "INSTITUTION_NAME"
+          "name": "Graduate School of Artificial Intelligence, POSTECH"
         }
       },
       {
         "@type": "Person",
-        "name": "SECOND_AUTHOR_NAME",
+        "name": "Hyounghun Kim",
+        "url": "https://hyounghk.github.io/",
         "affiliation": {
           "@type": "Organization",
-          "name": "INSTITUTION_NAME"
+          "name": "POSTECH"
         }
       }
     ],
-    "datePublished": "2024-01-01",
+    "datePublished": "2026",
     "publisher": {
       "@type": "Organization",
-      "name": "CONFERENCE_OR_JOURNAL_NAME"
+      "name": "European Conference on Computer Vision (ECCV) 2026"
     },
-    "url": "https://YOUR_DOMAIN.com/YOUR_PROJECT_PAGE",
-    "image": "https://YOUR_DOMAIN.com/static/images/social_preview.png",
-    "keywords": ["KEYWORD1", "KEYWORD2", "KEYWORD3", "machine learning", "computer vision"],
-    "abstract": "FULL_ABSTRACT_TEXT_HERE",
-    "citation": "BIBTEX_CITATION_HERE",
+    "url": "https://split-eccv2026.github.io/",
+    "image": "https://split-eccv2026.github.io/static/images/social_preview.png",
+    "keywords": ["AI-generated video detection", "training-free detection", "partial video manipulation", "video forensics", "computer vision"],
+    "sameAs": "https://arxiv.org/abs/2607.02886",
     "isAccessibleForFree": true,
-    "license": "https://creativecommons.org/licenses/by/4.0/",
-    "mainEntity": {
-      "@type": "WebPage",
-      "@id": "https://YOUR_DOMAIN.com/YOUR_PROJECT_PAGE"
-    },
-    "about": [
-      {
-        "@type": "Thing",
-        "name": "RESEARCH_AREA_1"
-      },
-      {
-        "@type": "Thing", 
-        "name": "RESEARCH_AREA_2"
-      }
-    ]
-  }
-  </script>
-  
-  <!-- Website/Organization Structured Data -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Organization",
-    "name": "INSTITUTION_OR_LAB_NAME",
-    "url": "https://YOUR_INSTITUTION_WEBSITE.com",
-    "logo": "https://YOUR_DOMAIN.com/static/images/favicon.ico",
-    "sameAs": [
-      "https://twitter.com/YOUR_TWITTER_HANDLE",
-      "https://github.com/YOUR_GITHUB_USERNAME"
-    ]
+    "codeRepository": "https://github.com/mldljyh/SPLIT"
   }
   </script>
 </head>
 <body>
 
-
   <!-- Scroll to Top Button -->
   <button class="scroll-to-top" onclick="scrollToTop()" title="Scroll to top" aria-label="Scroll to top">
     <i class="fas fa-chevron-up"></i>
   </button>
-
-  <!-- More Works Dropdown -->
-  <div class="more-works-container">
-    <button class="more-works-btn" onclick="toggleMoreWorks()" title="View More Works from Our Lab">
-      <i class="fas fa-flask"></i>
-      More Works
-      <i class="fas fa-chevron-down dropdown-arrow"></i>
-    </button>
-    <div class="more-works-dropdown" id="moreWorksDropdown">
-      <div class="dropdown-header">
-        <h4>More Works from Our Lab</h4>
-        <button class="close-btn" onclick="toggleMoreWorks()">
-          <i class="fas fa-times"></i>
-        </button>
-      </div>
-      <div class="works-list">
-        <!-- TODO: Replace with your lab's related works -->
-        <a href="https://arxiv.org/abs/PAPER_ID_1" class="work-item" target="_blank">
-          <div class="work-info">
-            <!-- TODO: Replace with actual paper title -->
-            <h5>Paper Title 1</h5>
-            <!-- TODO: Replace with brief description -->
-            <p>Brief description of the work and its main contribution.</p>
-            <!-- TODO: Replace with venue and year -->
-            <span class="work-venue">Conference/Journal 2024</span>
-          </div>
-          <i class="fas fa-external-link-alt"></i>
-        </a>
-        <!-- TODO: Add more related works or remove extra items -->
-        <a href="https://arxiv.org/abs/PAPER_ID_2" class="work-item" target="_blank">
-          <div class="work-info">
-            <h5>Paper Title 2</h5>
-            <p>Brief description of the work and its main contribution.</p>
-            <span class="work-venue">Conference/Journal 2023</span>
-          </div>
-          <i class="fas fa-external-link-alt"></i>
-        </a>
-        <a href="https://arxiv.org/abs/PAPER_ID_3" class="work-item" target="_blank">
-          <div class="work-info">
-            <h5>Paper Title 3</h5>
-            <p>Brief description of the work and its main contribution.</p>
-            <span class="work-venue">Conference/Journal 2023</span>
-          </div>
-          <i class="fas fa-external-link-alt"></i>
-        </a>
-      </div>
-    </div>
-  </div>
 
   <main id="main-content">
   <section class="hero">
@@ -240,281 +137,563 @@
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered">
-            <!-- TODO: Replace with your paper title -->
-            <h1 class="title is-1 publication-title">Academic Project Page</h1>
+
+            <span class="venue-badge"><span class="dot"></span>ECCV 2026</span>
+
+            <h1 class="title is-1 publication-title">
+              <span class="split-mark">SPLIT</span>: Training-Free AI-Generated and Partially Edited Video Detection
+              <span class="title-sub">via Spatial Patch-Level Incoherence and Temporal Roughness</span>
+            </h1>
+
             <div class="is-size-5 publication-authors">
-              <!-- TODO: Replace with your paper authors and their personal links -->
               <span class="author-block">
-                <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">First Author</a><sup>*</sup>,</span>
-                <span class="author-block">
-                  <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Second Author</a><sup>*</sup>,</span>
-                  <span class="author-block">
-                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Third Author</a>
-                  </span>
-                  </div>
+                <a href="https://mldljyh.github.io/" target="_blank">Jongyeop Hyun</a><sup>1</sup>,</span>
+              <span class="author-block">
+                <a href="https://hyounghk.github.io/" target="_blank">Hyounghun Kim</a><sup>1,2</sup></span>
+            </div>
 
-                  <div class="is-size-5 publication-authors">
-                    <!-- TODO: Replace with your institution and conference/journal info -->
-                    <span class="author-block">Institution Name<br>Conference name and year</span>
-                    <!-- TODO: Remove this line if no equal contribution -->
-                    <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span>
-                  </div>
+            <div class="is-size-5 publication-authors author-affil">
+              <span class="author-block"><sup>1</sup>Graduate School of Artificial Intelligence, POSTECH<br>
+              <sup>2</sup>Department of Computer Science and Engineering, POSTECH</span>
+            </div>
 
-                  <div class="column has-text-centered">
-                    <div class="publication-links">
-                         <!-- TODO: Update with your arXiv paper ID -->
-                      <span class="link-block">
-                        <a href="https://arxiv.org/pdf/<ARXIV PAPER ID>.pdf" target="_blank"
-                        class="external-link button is-normal is-rounded is-dark">
-                        <span class="icon">
-                          <i class="fas fa-file-pdf"></i>
-                        </span>
-                        <span>Paper</span>
-                      </a>
-                    </span>
+            <div class="column has-text-centered">
+              <div class="publication-links">
+                <span class="link-block">
+                  <a href="https://arxiv.org/pdf/2607.02886" target="_blank"
+                     class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon"><i class="fas fa-file-pdf"></i></span>
+                    <span>Paper</span>
+                  </a>
+                </span>
 
-                    <!-- TODO: Add your supplementary material PDF or remove this section -->
-                    <span class="link-block">
-                      <a href="static/pdfs/supplementary_material.pdf" target="_blank"
-                      class="external-link button is-normal is-rounded is-dark">
-                      <span class="icon">
-                        <i class="fas fa-file-pdf"></i>
-                      </span>
-                      <span>Supplementary</span>
-                    </a>
-                  </span>
+                <span class="link-block">
+                  <a href="https://arxiv.org/abs/2607.02886" target="_blank"
+                     class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon"><i class="ai ai-arxiv"></i></span>
+                    <span>arXiv</span>
+                  </a>
+                </span>
 
-                  <!-- TODO: Replace with your GitHub repository URL -->
-                  <span class="link-block">
-                    <a href="https://github.com/YOUR REPO HERE" target="_blank"
-                    class="external-link button is-normal is-rounded is-dark">
-                    <span class="icon">
-                      <i class="fab fa-github"></i>
-                    </span>
+                <span class="link-block">
+                  <a href="https://github.com/mldljyh/SPLIT" target="_blank"
+                     class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon"><i class="fab fa-github"></i></span>
                     <span>Code</span>
                   </a>
                 </span>
 
-                <!-- TODO: Update with your arXiv paper ID -->
                 <span class="link-block">
-                  <a href="https://arxiv.org/abs/<ARXIV PAPER ID>" target="_blank"
-                  class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                    <i class="ai ai-arxiv"></i>
-                  </span>
-                  <span>arXiv</span>
-                </a>
-              </span>
+                  <a href="#BibTeX"
+                     class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon"><i class="fas fa-quote-right"></i></span>
+                    <span>BibTeX</span>
+                  </a>
+                </span>
+              </div>
             </div>
+
           </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-
-<!-- Teaser video-->
-<section class="hero teaser">
-  <div class="container is-max-desktop">
-    <div class="hero-body">
-      <!-- TODO: Replace with your teaser video -->
-      <video poster="" id="tree" autoplay controls muted loop height="100%" preload="metadata">
-        <!-- TODO: Add your video file path here -->
-        <source src="static/videos/banner_video.mp4" type="video/mp4">
-      </video>
-      <!-- TODO: Replace with your video description -->
-      <h2 class="subtitle has-text-centered">
-        Aliquam vitae elit ullamcorper tellus egestas pellentesque. Ut lacus tellus, maximus vel lectus at, placerat pretium mi. Maecenas dignissim tincidunt vestibulum. Sed consequat hendrerit nisl ut maximus. 
-      </h2>
+  <!-- Teaser figure -->
+  <section class="hero teaser">
+    <div class="container is-max-desktop">
+      <div class="hero-body">
+        <figure class="figure">
+          <img src="static/images/figures/teaser.png"
+               alt="Three radar charts, one per benchmark, plotting Fake Recall at FPR = 0.1 percent for FID, AIGVDet, ReStraV, D3, and SPLIT across FakeParts categories, GenVideo generators, and ViF-Bench generators. SPLIT's outline encloses the others on nearly every axis.">
+          <figcaption>
+            <b>Fake Recall (%) at FPR = 0.1%</b> for FID, AIGVDet, ReStraV, D3, and SPLIT across FakeParts,
+            GenVideo, and ViF-Bench. SPLIT (red) achieves the highest and most uniform recall across nearly
+            every manipulation type and generator &mdash; without any training.
+          </figcaption>
+        </figure>
+      </div>
     </div>
-  </div>
-</section>
-<!-- End teaser video -->
+  </section>
+  <!-- End teaser figure -->
 
-<!-- Paper abstract -->
-<section class="section hero is-light">
-  <div class="container is-max-desktop">
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Abstract</h2>
-        <div class="content has-text-justified">
-          <!-- TODO: Replace with your paper abstract -->
+  <!-- Abstract -->
+  <section class="section hero is-light">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">Abstract</h2>
+          <div class="content has-text-justified">
+            <p>
+              Deploying AI-generated video detectors in real-world services demands an ultra-low false positive
+              rate (FPR) on real videos to avoid falsely rejecting authentic content, a regime where standard
+              metrics such as AUROC fail to reflect actual operating behavior. We introduce
+              <b>S</b>patial <b>P</b>atch-<b>L</b>evel <b>I</b>ncoherence and <b>T</b>emporal Roughness
+              (<b>SPLIT</b>), a training-free detector that operates on patch tokens from a frozen vision encoder
+              to detect both fully generated and partially edited videos. SPLIT computes two complementary
+              signals: <b>Two-step Temporal Roughness (TTR)</b>, capturing non-smooth patch trajectories via
+              one-step and two-step feature variation contrast, and <b>Local Spatial Motion Incoherence
+              (LSMI)</b>, measuring spatially inconsistent temporal changes through gradients of a feature-space
+              motion field. The two are fused multiplicatively with gamma correction to sharpen real&ndash;fake
+              separation at strict thresholds. We further propose a service-aligned evaluation protocol based on
+              Fake Recall at fixed FPR with real-only threshold calibration and cross-real threshold transfer.
+              Across three benchmarks &mdash; FakeParts, GenVideo, and ViF-Bench &mdash; SPLIT achieves the
+              highest Fake Recall at FPR = 0.1%, substantially outperforming supervised and training-free
+              baselines while remaining robust to post-processing with negligible overhead.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End abstract -->
+
+  <!-- At a glance -->
+  <section class="section">
+    <div class="container is-max-desktop">
+      <div class="has-text-centered">
+        <h2 class="title is-3">At a glance</h2>
+        <p class="section-lead">
+          Fake Recall at <kbd class="metric">FPR = 0.1%</kbd> &mdash; the deployment-relevant operating point,
+          where the threshold is set to reject roughly 1 authentic video in 1,000 on the calibration set.
+        </p>
+      </div>
+
+      <div class="stat-grid">
+        <div class="stat">
+          <div class="stat-value">74.5<span class="pct">%</span></div>
+          <div class="stat-label">FakeParts</div>
+          <div class="stat-note">partial edits<br><span class="vs">best baseline 35.7%</span></div>
+        </div>
+        <div class="stat">
+          <div class="stat-value">85.2<span class="pct">%</span></div>
+          <div class="stat-label">GenVideo</div>
+          <div class="stat-note">10 generators<br><span class="vs">best baseline 45.5%</span></div>
+        </div>
+        <div class="stat">
+          <div class="stat-value">84.5<span class="pct">%</span></div>
+          <div class="stat-label">ViF-Bench</div>
+          <div class="stat-note">2024&ndash;25 models<br><span class="vs">best baseline 33.9%</span></div>
+        </div>
+      </div>
+
+      <ul class="takeaways">
+        <li><b>Training-free.</b> Two closed-form statistics on frozen encoder tokens &mdash; zero learned parameters, no generator labels.</li>
+        <li><b>Patch-level.</b> Scoring every patch instead of a pooled clip embedding keeps localized edits from washing out.</li>
+        <li><b>Real-only calibration.</b> Thresholds are set from authentic video alone, and stay near target when the real domain shifts.</li>
+        <li><b>Negligible overhead.</b> Matches D3's runtime on the same backbone; the encoder forward pass dominates.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Method -->
+  <section class="section hero is-light">
+    <div class="container is-max-desktop">
+      <div class="has-text-centered">
+        <h2 class="title is-3">Method</h2>
+        <p class="section-lead">
+          A frozen vision encoder turns a clip into patch tokens. Two statistics read them &mdash; one along
+          time, one across space &mdash; and multiply into a single score.
+        </p>
+      </div>
+
+      <figure class="figure" style="margin-top: 2.25rem;">
+        <img src="static/images/figures/method_overview.png" loading="lazy"
+             alt="SPLIT pipeline: a frozen vision encoder produces patch tokens, from which Two-step Temporal Roughness and Local Spatial Motion Incoherence are computed, fused with gamma correction, and thresholded against a real-only calibrated threshold.">
+      </figure>
+
+      <div class="method-grid">
+        <div class="method-card">
+          <span class="tag">Temporal</span>
+          <h3>Two-step Temporal Roughness</h3>
+          <div class="eq">
+            <span class="math math-display" data-tex="\[ \mathrm{TTR}(n) = \log_2\!\left(L_1(n) + \epsilon\right) - \log_2\!\left(L_2(n) + \epsilon\right) \]"><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mrow><mi mathvariant="normal">T</mi><mi mathvariant="normal">T</mi><mi mathvariant="normal">R</mi></mrow><mo stretchy="false">(</mo><mi>n</mi><mo stretchy="false">)</mo><mo>=</mo><msub><mrow><mi>log</mi><mo>⁡</mo></mrow><mn>2</mn></msub><mtext> ⁣</mtext><mrow><mo fence="true">(</mo><msub><mi>L</mi><mn>1</mn></msub><mo stretchy="false">(</mo><mi>n</mi><mo stretchy="false">)</mo><mo>+</mo><mi>ϵ</mi><mo fence="true">)</mo></mrow><mo>−</mo><msub><mrow><mi>log</mi><mo>⁡</mo></mrow><mn>2</mn></msub><mtext> ⁣</mtext><mrow><mo fence="true">(</mo><msub><mi>L</mi><mn>2</mn></msub><mo stretchy="false">(</mo><mi>n</mi><mo stretchy="false">)</mo><mo>+</mo><mi>ϵ</mi><mo fence="true">)</mo></mrow></mrow><annotation encoding="application/x-tex">\mathrm{TTR}(n) = \log_2\!\left(L_1(n) + \epsilon\right) - \log_2\!\left(L_2(n) + \epsilon\right)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord"><span class="mord mathrm">TTR</span></span><span class="mopen">(</span><span class="mord mathnormal">n</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mop"><span class="mop">lo<span style="margin-right:0.01389em;">g</span></span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.207em;"><span style="top:-2.4559em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.2441em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:-0.1667em;"></span><span class="mspace" style="margin-right:0.1667em;"></span><span class="minner"><span class="mopen delimcenter" style="top:0em;">(</span><span class="mord"><span class="mord mathnormal">L</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mopen">(</span><span class="mord mathnormal">n</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mord mathnormal">ϵ</span><span class="mclose delimcenter" style="top:0em;">)</span></span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mop"><span class="mop">lo<span style="margin-right:0.01389em;">g</span></span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.207em;"><span style="top:-2.4559em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.2441em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:-0.1667em;"></span><span class="mspace" style="margin-right:0.1667em;"></span><span class="minner"><span class="mopen delimcenter" style="top:0em;">(</span><span class="mord"><span class="mord mathnormal">L</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mopen">(</span><span class="mord mathnormal">n</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mord mathnormal">ϵ</span><span class="mclose delimcenter" style="top:0em;">)</span></span></span></span></span></span></span><!--/math-->
+          </div>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ullamcorper tellus sed ante aliquam tempus. Etiam porttitor urna feugiat nibh elementum, et tempor dolor mattis. Donec accumsan enim augue, a vulputate nisi sodales sit amet. Proin bibendum ex eget mauris cursus euismod nec et nibh. Maecenas ac gravida ante, nec cursus dui. Vivamus purus nibh, placerat ac purus eget, sagittis vestibulum metus. Sed vestibulum bibendum lectus gravida commodo. Pellentesque auctor leo vitae sagittis suscipit.
+            Each patch traces a trajectory in feature space. <span class="math" data-tex="\(L_1\)"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>L</mi><mn>1</mn></msub></mrow><annotation encoding="application/x-tex">L_1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal">L</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span></span><!--/math--> accumulates frame-to-frame
+            displacements; <span class="math" data-tex="\(L_2\)"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>L</mi><mn>2</mn></msub></mrow><annotation encoding="application/x-tex">L_2</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal">L</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span></span><!--/math--> is a length-normalized two-step chord. Constant-velocity motion
+            makes them equal and smooth motion keeps them close &mdash; flicker and local misalignment push
+            <span class="math" data-tex="\(L_1\)"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>L</mi><mn>1</mn></msub></mrow><annotation encoding="application/x-tex">L_1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal">L</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span></span><!--/math--> above <span class="math" data-tex="\(L_2\)"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>L</mi><mn>2</mn></msub></mrow><annotation encoding="application/x-tex">L_2</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal">L</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span></span><!--/math-->.
+          </p>
+        </div>
+
+        <div class="method-card">
+          <span class="tag">Spatial</span>
+          <h3>Local Spatial Motion Incoherence</h3>
+          <div class="eq">
+            <span class="math math-display" data-tex="\[ \mathbf{LSMI} = \tfrac{1}{2}\left( \mathbb{E}_{t,i,j}\big[\|\nabla_x M_t(i,j)\|_2\big] + \mathbb{E}_{t,i,j}\big[\|\nabla_y M_t(i,j)\|_2\big] \right) \]"><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mrow><mi mathvariant="bold">L</mi><mi mathvariant="bold">S</mi><mi mathvariant="bold">M</mi><mi mathvariant="bold">I</mi></mrow><mo>=</mo><mstyle displaystyle="false" scriptlevel="0"><mfrac><mn>1</mn><mn>2</mn></mfrac></mstyle><mrow><mo fence="true">(</mo><msub><mi mathvariant="double-struck">E</mi><mrow><mi>t</mi><mo separator="true">,</mo><mi>i</mi><mo separator="true">,</mo><mi>j</mi></mrow></msub><mo fence="false" stretchy="true" minsize="1.2em" maxsize="1.2em">[</mo><mi mathvariant="normal">∥</mi><msub><mi mathvariant="normal">∇</mi><mi>x</mi></msub><msub><mi>M</mi><mi>t</mi></msub><mo stretchy="false">(</mo><mi>i</mi><mo separator="true">,</mo><mi>j</mi><mo stretchy="false">)</mo><msub><mi mathvariant="normal">∥</mi><mn>2</mn></msub><mo fence="false" stretchy="true" minsize="1.2em" maxsize="1.2em">]</mo><mo>+</mo><msub><mi mathvariant="double-struck">E</mi><mrow><mi>t</mi><mo separator="true">,</mo><mi>i</mi><mo separator="true">,</mo><mi>j</mi></mrow></msub><mo fence="false" stretchy="true" minsize="1.2em" maxsize="1.2em">[</mo><mi mathvariant="normal">∥</mi><msub><mi mathvariant="normal">∇</mi><mi>y</mi></msub><msub><mi>M</mi><mi>t</mi></msub><mo stretchy="false">(</mo><mi>i</mi><mo separator="true">,</mo><mi>j</mi><mo stretchy="false">)</mo><msub><mi mathvariant="normal">∥</mi><mn>2</mn></msub><mo fence="false" stretchy="true" minsize="1.2em" maxsize="1.2em">]</mo><mo fence="true">)</mo></mrow></mrow><annotation encoding="application/x-tex">\mathbf{LSMI} = \tfrac{1}{2}\left( \mathbb{E}_{t,i,j}\big[\|\nabla_x M_t(i,j)\|_2\big] + \mathbb{E}_{t,i,j}\big[\|\nabla_y M_t(i,j)\|_2\big] \right)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6861em;"></span><span class="mord"><span class="mord mathbf">LSMI</span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1.2em;vertical-align:-0.35em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.8451em;"><span style="top:-2.655em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">2</span></span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.394em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">1</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.345em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span><span class="mspace" style="margin-right:0.1667em;"></span><span class="minner"><span class="mopen delimcenter" style="top:0em;"><span class="delimsizing size1">(</span></span><span class="mord"><span class="mord mathbb">E</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3117em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight">t</span><span class="mpunct mtight">,</span><span class="mord mathnormal mtight">i</span><span class="mpunct mtight">,</span><span class="mord mathnormal mtight" style="margin-right:0.05724em;">j</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.2861em;"><span></span></span></span></span></span></span><span class="mord"><span class="delimsizing size1">[</span></span><span class="mord">∥</span><span class="mord"><span class="mord">∇</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.1514em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">x</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.10903em;">M</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.2806em;"><span style="top:-2.55em;margin-left:-0.109em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">t</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mopen">(</span><span class="mord mathnormal">i</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal" style="margin-right:0.05724em;">j</span><span class="mclose">)</span><span class="mord"><span class="mord">∥</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mord"><span class="delimsizing size1">]</span></span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mord"><span class="mord mathbb">E</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3117em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight">t</span><span class="mpunct mtight">,</span><span class="mord mathnormal mtight">i</span><span class="mpunct mtight">,</span><span class="mord mathnormal mtight" style="margin-right:0.05724em;">j</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.2861em;"><span></span></span></span></span></span></span><span class="mord"><span class="delimsizing size1">[</span></span><span class="mord">∥</span><span class="mord"><span class="mord">∇</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.1514em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight" style="margin-right:0.03588em;">y</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.2861em;"><span></span></span></span></span></span></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.10903em;">M</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.2806em;"><span style="top:-2.55em;margin-left:-0.109em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">t</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mopen">(</span><span class="mord mathnormal">i</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal" style="margin-right:0.05724em;">j</span><span class="mclose">)</span><span class="mord"><span class="mord">∥</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mord"><span class="delimsizing size1">]</span></span><span class="mclose delimcenter" style="top:0em;"><span class="delimsizing size1">)</span></span></span></span></span></span></span></span><!--/math-->
+          </div>
+          <p>
+            Real motion is spatially coordinated: neighbors change together. LSMI takes spatial gradients of the
+            feature-space motion field <span class="math" data-tex="\(M_t = P_{t+1} - P_t\)"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>M</mi><mi>t</mi></msub><mo>=</mo><msub><mi>P</mi><mrow><mi>t</mi><mo>+</mo><mn>1</mn></mrow></msub><mo>−</mo><msub><mi>P</mi><mi>t</mi></msub></mrow><annotation encoding="application/x-tex">M_t = P_{t+1} - P_t</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.10903em;">M</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.2806em;"><span style="top:-2.55em;margin-left:-0.109em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">t</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.8917em;vertical-align:-0.2083em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.13889em;">P</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:-0.1389em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight">t</span><span class="mbin mtight">+</span><span class="mord mtight">1</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.2083em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.8333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.13889em;">P</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.2806em;"><span style="top:-2.55em;margin-left:-0.1389em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">t</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span></span><!--/math-->.
+            Edited regions move unlike their neighbors, raising it.
+          </p>
+        </div>
+      </div>
+
+      <div class="fusion-strip">
+        <div class="fusion-eq">
+          <span class="math math-display" data-tex="\[ s(x) = \mathbf{TTR}^{\gamma} \cdot \mathbf{LSMI}, \qquad \gamma = 8 \]"><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>s</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mo>=</mo><msup><mrow><mi mathvariant="bold">T</mi><mi mathvariant="bold">T</mi><mi mathvariant="bold">R</mi></mrow><mi>γ</mi></msup><mo>⋅</mo><mrow><mi mathvariant="bold">L</mi><mi mathvariant="bold">S</mi><mi mathvariant="bold">M</mi><mi mathvariant="bold">I</mi></mrow><mo separator="true">,</mo><mspace width="2em"/><mi>γ</mi><mo>=</mo><mn>8</mn></mrow><annotation encoding="application/x-tex">s(x) = \mathbf{TTR}^{\gamma} \cdot \mathbf{LSMI}, \qquad \gamma = 8</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal">s</span><span class="mopen">(</span><span class="mord mathnormal">x</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.7404em;"></span><span class="mord"><span class="mord"><span class="mord mathbf">TTR</span></span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.7404em;"><span style="top:-3.139em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight" style="margin-right:0.05556em;">γ</span></span></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">⋅</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.8805em;vertical-align:-0.1944em;"></span><span class="mord"><span class="mord mathbf">LSMI</span></span><span class="mpunct">,</span><span class="mspace" style="margin-right:2em;"></span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal" style="margin-right:0.05556em;">γ</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">8</span></span></span></span></span></span><!--/math-->
+        </div>
+        <p>
+          Multiplicative fusion with a fixed sharpening exponent &mdash; chosen once on a held-out split, never
+          learned. A clip is flagged when <span class="math" data-tex="\(s(x) \ge \tau_\alpha\)"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>s</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mo>≥</mo><msub><mi>τ</mi><mi>α</mi></msub></mrow><annotation encoding="application/x-tex">s(x) \ge \tau_\alpha</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal">s</span><span class="mopen">(</span><span class="mord mathnormal">x</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">≥</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.5806em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.1132em;">τ</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.1514em;"><span style="top:-2.55em;margin-left:-0.1132em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight" style="margin-right:0.0037em;">α</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span></span><!--/math-->, where <span class="math" data-tex="\(\tau_\alpha\)"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>τ</mi><mi>α</mi></msub></mrow><annotation encoding="application/x-tex">\tau_\alpha</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.5806em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.1132em;">τ</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.1514em;"><span style="top:-2.55em;margin-left:-0.1132em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight" style="margin-right:0.0037em;">α</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span></span><!--/math--> is calibrated
+          on <b>real videos only</b> to hit a target FPR <span class="math" data-tex="\(\alpha\)"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>α</mi></mrow><annotation encoding="application/x-tex">\alpha</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.4306em;"></span><span class="mord mathnormal" style="margin-right:0.0037em;">α</span></span></span></span></span><!--/math-->.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Protocol -->
+  <section class="section">
+    <div class="container is-max-desktop">
+      <div class="has-text-centered">
+        <h2 class="title is-3">Service-aligned evaluation</h2>
+        <p class="section-lead">
+          AUROC averages over regions of the ROC curve no deployed service operates in. If false rejections must
+          be rare, only the far-left tail matters.
+        </p>
+      </div>
+
+      <div class="protocol-grid">
+        <div class="protocol-item">
+          <span class="num">1</span>
+          <h3>Fake Recall at fixed FPR</h3>
+          <p>Recall on manipulated video at <span class="math" data-tex="\(\alpha \in \{0.1\%, 1\%, 5\%\}\)"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>α</mi><mo>∈</mo><mo stretchy="false">{</mo><mn>0.1</mn><mi mathvariant="normal">%</mi><mo separator="true">,</mo><mn>1</mn><mi mathvariant="normal">%</mi><mo separator="true">,</mo><mn>5</mn><mi mathvariant="normal">%</mi><mo stretchy="false">}</mo></mrow><annotation encoding="application/x-tex">\alpha \in \{0.1\%, 1\%, 5\%\}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.5782em;vertical-align:-0.0391em;"></span><span class="mord mathnormal" style="margin-right:0.0037em;">α</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">∈</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">{</span><span class="mord">0.1%</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord">1%</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord">5%</span><span class="mclose">}</span></span></span></span></span><!--/math-->, instead of a curve-wide average.</p>
+        </div>
+        <div class="protocol-item">
+          <span class="num">2</span>
+          <h3>Real-only calibration</h3>
+          <p><span class="math" data-tex="\(\tau_\alpha\)"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>τ</mi><mi>α</mi></msub></mrow><annotation encoding="application/x-tex">\tau_\alpha</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.5806em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.1132em;">τ</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.1514em;"><span style="top:-2.55em;margin-left:-0.1132em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight" style="margin-right:0.0037em;">α</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span></span><!--/math--> is set on real video alone &mdash; no access to the generators a deployed detector has yet to meet.</p>
+        </div>
+        <div class="protocol-item">
+          <span class="num">3</span>
+          <h3>Cross-real transfer</h3>
+          <p>Calibrate on ROVI and on MSR-VTT separately, then report the harmonic mean of both Fake Recalls.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Results -->
+  <section class="section hero is-light">
+    <div class="container is-max-desktop">
+      <div class="has-text-centered">
+        <h2 class="title is-3">Results</h2>
+        <p class="section-lead">
+          Fake Recall at FPR = 0.1% under cross-real threshold transfer, against the strongest of the eleven
+          compared detectors. Full tables for all methods and operating points are in the paper.
+        </p>
+      </div>
+
+      <div class="table-block">
+        <h3 class="mini-title">Overall, at FPR = 0.1%</h3>
+        <div class="table-scroll" tabindex="0" role="region" aria-label="Overall Fake Recall at FPR 0.1 percent by method (scrollable)">
+          <table class="results">
+            <caption class="sr-only">Overall Fake Recall at FPR 0.1% by method on FakeParts, GenVideo and ViF-Bench.</caption>
+            <thead>
+              <tr>
+                <th scope="col">Method</th>
+                <th scope="col" class="col-sep">Type</th>
+                <th scope="col" class="col-sep">FakeParts</th>
+                <th scope="col">GenVideo</th>
+                <th scope="col">ViF-Bench</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><th scope="row">FID</th><td class="col-sep"><span class="dim">sup.</span></td><td class="col-sep">4.71</td><td>34.03</td><td>5.22</td></tr>
+              <tr><th scope="row">FTCN</th><td class="col-sep"><span class="dim">sup.</span></td><td class="col-sep">5.44</td><td>32.80</td><td>15.46</td></tr>
+              <tr><th scope="row">AIGVDet</th><td class="col-sep"><span class="dim">sup.</span></td><td class="col-sep">9.13</td><td>45.38</td><td>25.69</td></tr>
+              <tr><th scope="row">ReStraV</th><td class="col-sep"><span class="dim">sup.</span></td><td class="col-sep runner">35.67</td><td class="runner">45.52</td><td class="runner">33.93</td></tr>
+              <tr class="group-sep"><th scope="row">D3</th><td class="col-sep"><span class="dim">free</span></td><td class="col-sep">2.28</td><td>5.47</td><td>0.97</td></tr>
+              <tr class="ours"><th scope="row">SPLIT</th><td class="col-sep"><span class="dim">free</span></td><td class="col-sep">74.45</td><td>85.16</td><td>84.52</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="table-note">
+          <span class="dim">sup.</span> = supervised, trained on GenVideo-100K; <span class="dim">free</span> =
+          training-free. Best baseline per benchmark underlined. SPLIT roughly doubles the strongest baseline on
+          FakeParts and ViF-Bench while learning nothing.
+        </p>
+      </div>
+
+      <div class="table-block">
+        <h3 class="mini-title">SPLIT as the threshold relaxes</h3>
+        <div class="table-scroll" tabindex="0" role="region" aria-label="SPLIT Fake Recall across FPR targets (scrollable)">
+          <table class="results compact">
+            <caption class="sr-only">SPLIT Fake Recall at FPR 0.1%, 1% and 5% on each benchmark.</caption>
+            <thead>
+              <tr>
+                <th scope="col">Benchmark</th>
+                <th scope="col" class="col-sep">0.1%</th>
+                <th scope="col">1%</th>
+                <th scope="col">5%</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="ours"><th scope="row">FakeParts</th><td class="col-sep">74.45</td><td>83.58</td><td>89.70</td></tr>
+              <tr class="ours"><th scope="row">GenVideo</th><td class="col-sep">85.16</td><td>93.09</td><td>97.35</td></tr>
+              <tr class="ours"><th scope="row">ViF-Bench</th><td class="col-sep">84.52</td><td>95.08</td><td>98.46</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="table-note">
+          Recall climbs steadily rather than only just clearing the cut &mdash; the mark of a score distribution
+          that genuinely separates real from generated content.
+        </p>
+      </div>
+
+      <h3 class="mini-title" style="margin-top: 3rem;">Which edits are hard</h3>
+      <p class="table-note">
+        FakeParts by manipulation category, FPR = 0.1%.
+      </p>
+      <div class="table-scroll" tabindex="0" role="region" aria-label="Fake Recall by FakeParts manipulation category (scrollable)">
+        <table class="results">
+          <caption class="sr-only">Fake Recall at FPR 0.1% by method across the eight FakeParts manipulation categories and the overall average.</caption>
+          <thead>
+            <tr>
+                <th scope="col">Method</th>
+                <th scope="col" class="col-sep">Extrap.</th>
+                <th scope="col">Faceswap</th>
+                <th scope="col">Inpaint.</th>
+                <th scope="col">Interp.</th>
+                <th scope="col">Outpaint.</th>
+                <th scope="col">Style</th>
+                <th scope="col">T2V</th>
+                <th scope="col">TI2V</th>
+                <th scope="col" class="col-sep">Overall</th>
+            </tr>
+          </thead>
+          <tbody>
+              <tr><th scope="row">AIGVDet</th><td class="col-sep">0.42</td><td>0.89</td><td>0.98</td><td>0.43</td><td>0.56</td><td>3.69</td><td>31.65</td><td>34.39</td><td class="col-sep">9.13</td></tr>
+              <tr><th scope="row">ReStraV</th><td class="col-sep">23.27</td><td>12.98</td><td class="best">19.09</td><td>0.18</td><td>91.45</td><td>18.60</td><td>46.65</td><td>73.13</td><td class="col-sep">35.67</td></tr>
+              <tr class="group-sep"><th scope="row">D3</th><td class="col-sep">0.00</td><td>0.04</td><td>0.00</td><td>0.00</td><td>2.72</td><td>0.34</td><td>14.46</td><td>0.66</td><td class="col-sep">2.28</td></tr>
+              <tr class="ours"><th scope="row">SPLIT</th><td class="col-sep">97.86</td><td>60.09</td><td>2.48</td><td>67.81</td><td>96.52</td><td>98.80</td><td>76.74</td><td>95.27</td><td class="col-sep">74.45</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="table-note">
+        Extrapolation, Outpainting, Style Change and TI2V are near-saturated even at this threshold. Inpainting is
+        the one category where SPLIT is beaten &mdash; ReStraV leads with 19.09% &mdash; reflecting how little of
+        each frame an inpainting edit touches. On GenVideo, SPLIT clears 90% on six of the ten generators; on
+        ViF-Bench it ranks first on all nineteen, spanning 61.58&ndash;98.98%.
+      </p>
+    </div>
+  </section>
+
+  <!-- Analysis -->
+  <section class="section">
+    <div class="container is-max-desktop">
+      <div class="has-text-centered">
+        <h2 class="title is-3">What drives it</h2>
+        <p class="section-lead">
+          Three levers &mdash; patch-level granularity, the spatial signal, and the gamma exponent &mdash; plus the
+          two properties a deployment cares about: cost and calibration stability.
+        </p>
+      </div>
+
+      <div class="figure-row">
+        <div>
+          <h3 class="mini-title">Component ablation</h3>
+          <div class="table-scroll" tabindex="0" role="region" aria-label="Component ablation (scrollable)">
+            <table class="results compact">
+              <caption class="sr-only">Fake Recall on FakeParts Overall for each combination of patch-level tokens, TTR and LSMI.</caption>
+              <thead>
+                <tr>
+                <th scope="col">Patch</th>
+                <th scope="col">TTR</th>
+                <th scope="col">LSMI</th>
+                <th scope="col" class="col-sep">0.1%</th>
+                <th scope="col">1%</th>
+                <th scope="col">5%</th>
+                </tr>
+              </thead>
+              <tbody>
+              <tr><td class="mark off">&ndash;</td><td class="mark">&check;</td><td class="mark off">&ndash;</td><td class="col-sep">54.21</td><td>76.72</td><td>88.77</td></tr>
+              <tr><td class="mark">&check;</td><td class="mark">&check;</td><td class="mark off">&ndash;</td><td class="col-sep">68.29</td><td>82.09</td><td>89.37</td></tr>
+              <tr><td class="mark">&check;</td><td class="mark off">&ndash;</td><td class="mark">&check;</td><td class="col-sep">8.04</td><td>14.63</td><td>25.07</td></tr>
+              <tr class="ours"><td class="mark">&check;</td><td class="mark">&check;</td><td class="mark">&check;</td><td class="col-sep">74.45</td><td>83.58</td><td>89.70</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <p class="table-note">
+            Swapping global <code>[CLS]</code> embeddings for patch tokens is the largest single jump,
+            <b>+14.08</b> at FPR = 0.1%. LSMI alone is weak, but adds a further <b>+6.16</b> on top of patch-level
+            TTR. FakeParts Overall, cross-real threshold transfer.
+          </p>
+        </div>
+
+        <div>
+          <h3 class="mini-title">Gamma exponent</h3>
+          <figure class="figure">
+            <img src="static/images/figures/gamma.png" loading="lazy"
+                 alt="Line chart of FakeParts Overall Fake Recall against the gamma exponent at FPR of 0.1, 1, and 5 percent. Recall rises from gamma 1 to gamma 8 and then flattens.">
+          </figure>
+          <p class="table-note">
+            Gains rise steadily from <span class="math" data-tex="\(\gamma = 1\)"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>γ</mi><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">\gamma = 1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.625em;vertical-align:-0.1944em;"></span><span class="mord mathnormal" style="margin-right:0.05556em;">γ</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">1</span></span></span></span></span><!--/math--> to <span class="math" data-tex="\(8\)"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>8</mn></mrow><annotation encoding="application/x-tex">8</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">8</span></span></span></span></span><!--/math-->, then flatten; <span class="math" data-tex="\(\gamma = 16\)"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>γ</mi><mo>=</mo><mn>16</mn></mrow><annotation encoding="application/x-tex">\gamma = 16</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.625em;vertical-align:-0.1944em;"></span><span class="mord mathnormal" style="margin-right:0.05556em;">γ</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">16</span></span></span></span></span><!--/math--> can regress
+            slightly. <span class="math" data-tex="\(\gamma = 8\)"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>γ</mi><mo>=</mo><mn>8</mn></mrow><annotation encoding="application/x-tex">\gamma = 8</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.625em;vertical-align:-0.1944em;"></span><span class="mord mathnormal" style="margin-right:0.05556em;">γ</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">8</span></span></span></span></span><!--/math--> is used for every benchmark and every FPR target.
+          </p>
+        </div>
+      </div>
+
+      <div class="figure-row" style="margin-top: 3rem;">
+        <div>
+          <h3 class="mini-title">Cost</h3>
+          <figure class="figure">
+            <img src="static/images/figures/overall_vs_time.png" loading="lazy"
+                 alt="Left: bar chart of FakeParts Overall Fake Recall at FPR 0.1 percent. Right: end-to-end inference time on 1000 FakeParts T2V samples on a log scale, where SPLIT matches D3.">
+          </figure>
+          <p class="table-note">
+            Recall at FPR = 0.1% against end-to-end time on 1,000 FakeParts T2V samples (log scale). Encoding
+            dominates, so TTR and LSMI add almost nothing &mdash; SPLIT matches D3's runtime while taking recall
+            from 2.28% to 74.45%.
+          </p>
+        </div>
+
+        <div>
+          <h3 class="mini-title">Calibration stability</h3>
+          <div class="table-scroll" tabindex="0" role="region" aria-label="Cross-real threshold transfer (scrollable)">
+            <table class="results compact">
+              <caption class="sr-only">Actual false positive rate on a held-out real domain when the threshold was calibrated on a different real domain, per method and direction.</caption>
+              <thead>
+                <tr>
+                <th scope="col">Method</th>
+                <th scope="col" class="col-sep">MSR-VTT &rarr; ROVI</th>
+                <th scope="col" class="col-sep">ROVI &rarr; MSR-VTT</th>
+                </tr>
+              </thead>
+              <tbody>
+              <tr><th scope="row">AIGVDet</th><td class="col-sep">13.22</td><td class="col-sep">0.00</td></tr>
+              <tr><th scope="row">ReStraV</th><td class="col-sep">0.00</td><td class="col-sep">15.30</td></tr>
+              <tr class="group-sep"><th scope="row">D3</th><td class="col-sep">0.00</td><td class="col-sep">1.18</td></tr>
+              <tr class="ours"><th scope="row">SPLIT</th><td class="col-sep">0.03</td><td class="col-sep">0.56</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <p class="table-note">
+            Actual rejection rate (%) on a held-out real domain when the threshold was calibrated for a 0.1% target
+            on a <i>different</i> one &mdash; closer to 0.1 is better. SPLIT stays near target both ways, while
+            ReStraV rejects nothing in one direction and 15.30% of real videos in the other.
+          </p>
+        </div>
+      </div>
+
+      <div class="figure-row" style="margin-top: 3rem;">
+        <div>
+          <h3 class="mini-title">Post-processing</h3>
+          <div class="table-scroll" tabindex="0" role="region" aria-label="Robustness to post-processing (scrollable)">
+            <table class="results compact">
+              <caption class="sr-only">Fake Recall at FPR 0.1% on FakeParts Overall under blur, JPEG compression and axis flips.</caption>
+              <thead>
+                <tr>
+                <th scope="col">Method</th>
+                <th scope="col" class="col-sep">Clean</th>
+                <th scope="col">Blur &sigma;2</th>
+                <th scope="col">JPEG 80</th>
+                <th scope="col">Flip y</th>
+                </tr>
+              </thead>
+              <tbody>
+              <tr><th scope="row">ReStraV</th><td class="col-sep">35.67</td><td>54.73</td><td>24.42</td><td>38.50</td></tr>
+              <tr class="group-sep"><th scope="row">D3</th><td class="col-sep">2.28</td><td>1.89</td><td>2.78</td><td>2.09</td></tr>
+              <tr class="ours"><th scope="row">SPLIT</th><td class="col-sep">74.45</td><td>55.42</td><td>64.40</td><td>66.92</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <p class="table-note">
+            FPR = 0.1%, the harshest setting of each perturbation. Blur costs the most yet still leads; JPEG is
+            gentler, so the signal does not rest on fragile high-frequency artifacts. At FPR = 5% every condition
+            stays within 87.12&ndash;89.70%.
+          </p>
+        </div>
+
+        <div>
+          <h3 class="mini-title">Vision encoder</h3>
+          <div class="table-scroll" tabindex="0" role="region" aria-label="Fake Recall by vision encoder (scrollable)">
+            <table class="results compact">
+              <caption class="sr-only">Fake Recall at FPR 0.1% for SPLIT versus D3 across representative frozen vision encoders.</caption>
+              <thead>
+                <tr>
+                  <th scope="col" rowspan="2">Encoder</th>
+                  <th scope="colgroup" class="group col-sep" colspan="2">FakeParts</th>
+                  <th scope="colgroup" class="group col-sep" colspan="2">GenVideo</th>
+                  <th scope="colgroup" class="group col-sep" colspan="2">ViF-B.</th>
+                </tr>
+                <tr>
+                  <th scope="col" class="col-sep sub">D3</th><th scope="col" class="sp sub">SPLIT</th>
+                  <th scope="col" class="col-sep sub">D3</th><th scope="col" class="sp sub">SPLIT</th>
+                  <th scope="col" class="col-sep sub">D3</th><th scope="col" class="sp sub">SPLIT</th>
+                </tr>
+              </thead>
+              <tbody>
+              <tr><th scope="row">XCLIP-B/16</th><td class="col-sep">2.28</td><td class="sp">74.45</td><td class="col-sep">5.47</td><td class="sp">85.16</td><td class="col-sep">0.97</td><td class="sp">84.52</td></tr>
+              <tr><th scope="row">CLIP-B/16</th><td class="col-sep">1.66</td><td class="sp">71.47</td><td class="col-sep">2.37</td><td class="sp">85.87</td><td class="col-sep">0.74</td><td class="sp">85.29</td></tr>
+              <tr><th scope="row">DINOv2-B</th><td class="col-sep">4.00</td><td class="sp">47.77</td><td class="col-sep">16.32</td><td class="sp">68.03</td><td class="col-sep">3.97</td><td class="sp">56.64</td></tr>
+              <tr><th scope="row">ResNet18</th><td class="col-sep">1.93</td><td class="sp">61.23</td><td class="col-sep">1.68</td><td class="sp">76.10</td><td class="col-sep">0.94</td><td class="sp">73.53</td></tr>
+              <tr><th scope="row">MobileNet-v3</th><td class="col-sep">1.77</td><td class="sp">49.81</td><td class="col-sep">1.60</td><td class="sp">67.15</td><td class="col-sep">1.02</td><td class="sp">61.07</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <p class="table-note">
+            FPR = 0.1%. SPLIT beats D3 with every backbone tested &mdash; five of ten shown &mdash; transformer and
+            CNN alike. Finer patch grids help, but even MobileNet-v3 lifts FakeParts recall from 1.77% to 49.81%:
+            the gain comes from patch-level scoring, not a particular representation.
           </p>
         </div>
       </div>
     </div>
-  </div>
-</section>
-<!-- End paper abstract -->
-
-
-<!-- Image carousel -->
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <div id="results-carousel" class="carousel results-carousel">
-       <div class="item">
-        <!-- TODO: Replace with your research result images -->
-        <img src="static/images/carousel1.jpg" alt="First research result visualization" loading="lazy"/>
-        <!-- TODO: Replace with description of this result -->
-        <h2 class="subtitle has-text-centered">
-          First image description.
-        </h2>
-      </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel2.jpg" alt="Second research result visualization" loading="lazy"/>
-        <h2 class="subtitle has-text-centered">
-          Second image description.
-        </h2>
-      </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel3.jpg" alt="Third research result visualization" loading="lazy"/>
-        <h2 class="subtitle has-text-centered">
-         Third image description.
-       </h2>
-     </div>
-     <div class="item">
-      <!-- Your image here -->
-      <img src="static/images/carousel4.jpg" alt="Fourth research result visualization" loading="lazy"/>
-      <h2 class="subtitle has-text-centered">
-        Fourth image description.
-      </h2>
-    </div>
-  </div>
-</div>
-</div>
-</section>
-<!-- End image carousel -->
-
-
-
-
-<!-- Youtube video -->
-<section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container">
-      <!-- Paper video. -->
-      <h2 class="title is-3">Video Presentation</h2>
-      <div class="columns is-centered has-text-centered">
-        <div class="column is-four-fifths">
-          
-          <div class="publication-video">
-            <!-- TODO: Replace with your YouTube video ID -->
-            <iframe src="https://www.youtube.com/embed/JkaxUblCGz0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- End youtube video -->
-
-
-<!-- Video carousel -->
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title is-3">Another Carousel</h2>
-      <div id="results-carousel" class="carousel results-carousel">
-        <div class="item item-video1">
-          <!-- TODO: Add poster image for better preview -->
-          <video poster="" id="video1" controls muted loop height="100%" preload="metadata">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel1.mp4" type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video2">
-          <!-- TODO: Add poster image for better preview -->
-          <video poster="" id="video2" controls muted loop height="100%" preload="metadata">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel2.mp4" type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video3">
-          <!-- TODO: Add poster image for better preview -->
-          <video poster="" id="video3" controls muted loop height="100%" preload="metadata">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel3.mp4" type="video/mp4">
-          </video>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- End video carousel -->
-
-
-
-
-
-
-<!-- Paper poster -->
-<section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title">Poster</h2>
-
-      <!-- TODO: Replace with your poster PDF -->
-      <iframe  src="static/pdfs/sample.pdf" width="100%" height="550">
-          </iframe>
-        
-      </div>
-    </div>
   </section>
-<!--End paper poster -->
 
-
-
-<!--BibTex citation -->
-  <section class="section" id="BibTeX">
+  <!-- BibTeX -->
+  <section class="section hero is-light" id="BibTeX">
     <div class="container is-max-desktop content">
       <div class="bibtex-header">
         <h2 class="title">BibTeX</h2>
-        <button class="copy-bibtex-btn" onclick="copyBibTeX()" title="Copy BibTeX to clipboard">
+        <button class="copy-bibtex-btn" onclick="copyBibTeX()" title="Copy BibTeX to clipboard" aria-label="Copy BibTeX to clipboard">
           <i class="fas fa-copy"></i>
           <span class="copy-text">Copy</span>
         </button>
       </div>
-      <pre id="bibtex-code"><code>@article{YourPaperKey2024,
-  title={Your Paper Title Here},
-  author={First Author and Second Author and Third Author},
-  journal={Conference/Journal Name},
-  year={2024},
-  url={https://your-domain.com/your-project-page}
+      <pre id="bibtex-code"><code>@misc{hyun2026splittrainingfreeaigeneratedpartially,
+      title={SPLIT: Training-Free AI-Generated and Partially Edited Video Detection via Spatial Patch-Level Incoherence and Temporal Roughness},
+      author={Jongyeop Hyun and Hyounghun Kim},
+      year={2026},
+      eprint={2607.02886},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2607.02886},
 }</code></pre>
+      <p class="ack">
+        Supported by IITP grant funded by the Korea government (MSIT) (No.&nbsp;RS-2019-II191906, Artificial
+        Intelligence Graduate School Program, POSTECH).
+      </p>
     </div>
-</section>
-<!--End BibTex citation -->
-
+  </section>
+  </main>
 
   <footer class="footer">
-  <div class="container">
-    <div class="columns is-centered">
-      <div class="column is-8">
-        <div class="content">
-
-          <p>
-            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
-            You are free to borrow the source code of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
-            Commons Attribution-ShareAlike 4.0 International License</a>.
-          </p>
-
+    <div class="container">
+      <div class="columns is-centered">
+        <div class="column is-8">
+          <div class="content has-text-centered">
+            <p>
+              <a href="https://arxiv.org/abs/2607.02886" target="_blank" class="inline-link">arXiv</a> &middot;
+              <a href="https://github.com/mldljyh/SPLIT" target="_blank" class="inline-link">Code</a> &middot;
+              <a href="https://mldljyh.github.io/" target="_blank" class="inline-link">Jongyeop Hyun</a> &middot;
+              <a href="https://hyounghk.github.io/" target="_blank" class="inline-link">Hyounghun Kim</a>
+            </p>
+            <p>
+              This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a>
+              which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
+              You are free to borrow the source code of this website, we just ask that you link back to this page in the footer.
+              <br>This website is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
+              Commons Attribution-ShareAlike 4.0 International License</a>.
+            </p>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-</footer>
+  </footer>
 
-<!-- Statcounter tracking code -->
-  
-<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
-
-    <!-- End of Statcounter Code -->
-
-  </body>
-  </html>
+</body>
+</html>
