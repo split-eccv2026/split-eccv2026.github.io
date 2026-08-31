@@ -104,10 +104,16 @@
   color: var(--text-primary);
 }
 
+.figure-row > * {
+  min-width: 0;
+}
+
 .figure-row {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   gap: 2.5rem;
+  /* 1fr would be minmax(auto, 1fr): a wide table then grows its track
+     instead of scrolling. Zero the floor and let the items shrink. */
   margin-top: 2rem;
   align-items: start;
 }
@@ -196,6 +202,13 @@
 }
 
 /* ---------- Method cards ---------- */
+.method-grid > *,
+.protocol-grid > *,
+.stat-grid > *,
+.takeaways > * {
+  min-width: 0;
+}
+
 .method-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -241,6 +254,7 @@
 }
 
 .eq {
+  max-width: 100%;
   margin: 0 0 1rem;
   padding: 0.9rem 1rem;
   overflow-x: auto;
@@ -266,12 +280,14 @@
   font-size: 1.12em;
 }
 
-/* Long equations scroll inside their box rather than widening the page. */
+/* A single scroller: the .eq box owns it, so a too-wide equation cannot nest
+   two scrollbars or clip with no affordance. */
 .katex-display {
-  overflow-x: auto;
-  overflow-y: hidden;
+  overflow: visible;
   padding: 0.15rem 0;
 }
+
+
 
 /* The MathML copy is for assistive tech and clipboard; keep it out of sight. */
 .katex .katex-mathml {
@@ -363,6 +379,7 @@
 }
 
 .table-scroll {
+  max-width: 100%;
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
   border: 1px solid var(--border-color);
@@ -580,7 +597,63 @@ kbd.metric {
   .takeaways,
   .protocol-grid,
   .stat-grid {
-    grid-template-columns: 1fr;
+    /* minmax(0, 1fr), not 1fr: see .figure-row above */
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .figure-row {
+    gap: 2rem;
+  }
+  .method-card {
+    padding: 1.25rem;
+  }
+  .eq {
+    padding: 0.75rem 0.6rem;
+  }
+  .eq .katex-display > .katex {
+    font-size: 0.95em;
+  }
+  .table-note,
+  .section-lead {
+    font-size: 0.9rem;
+  }
+}
+
+/* Very narrow phones: shrink the hero type so the title cannot be clipped. */
+@media screen and (max-width: 430px) {
+  .publication-title {
+    font-size: 1.6rem !important;
+    line-height: 1.25 !important;
+  }
+  .title-sub {
+    font-size: 0.72em;
+  }
+  .publication-authors {
+    font-size: 0.95rem !important;
+  }
+  .author-affil {
+    font-size: 0.85rem;
+  }
+  .hero-body {
+    padding: 2rem 1rem;
+  }
+  .section {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  table.results {
+    font-size: 0.78rem;
+  }
+  table.results th,
+  table.results td {
+    padding: 0.4rem 0.5rem;
+  }
+  .stat .stat-value {
+    font-size: 1.9rem;
+  }
+  /* Fit the widest formula rather than leaving it to scroll unnoticed. */
+  .eq .katex-display > .katex,
+  .fusion-strip .fusion-eq .katex-display > .katex {
+    font-size: 0.86em;
   }
 }
 
