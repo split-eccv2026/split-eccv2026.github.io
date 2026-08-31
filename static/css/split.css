@@ -59,6 +59,51 @@
   color: var(--text-primary);
 }
 
+/* ---------- Layout containment ---------- */
+/* Bulma's .hero is `display:flex; flex-direction:column`, so .container is a
+   flex item. Its `margin: 0 auto` sits on the cross axis, which suppresses the
+   stretch that would otherwise size it to the parent, leaving it sized by
+   content: the `white-space: pre` BibTeX block and the nowrap table cells
+   inflated it to 1294px and 605px inside a 375px viewport. .hero's
+   overflow:hidden then clipped that instead of letting the inner scroller work,
+   so the document reported no overflow while content was cut off and iOS panned.
+   Giving the container a definite width is what contains it.
+
+   Deliberately no max-width here: Bulma's own container caps (960/1152/1344px,
+   and 960 flat for is-max-desktop) must stay authoritative. */
+.hero,
+.hero-body,
+.section {
+  min-width: 0;
+  max-width: 100%;
+}
+
+.hero > .container,
+.hero-body > .container,
+.section > .container {
+  width: 100%;
+  min-width: 0;
+}
+
+/* Columns need only the min-content floor removed. Setting a width here would
+   override Bulma's explicit column widths (.is-four-fifths, .is-8) and fight
+   the -0.75rem gutter margins on the row. */
+.container > .columns,
+.columns > .column {
+  min-width: 0;
+}
+
+/* The BibTeX block is `white-space: pre`, so its min-content width is one long
+   line. Wrap it instead of demanding ~1250px of horizontal scroll. */
+pre,
+pre#bibtex-code {
+  min-width: 0;
+  max-width: 100%;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+  overflow-x: auto;
+}
+
 /* ---------- Section furniture ---------- */
 .section-lead {
   max-width: 44rem;
